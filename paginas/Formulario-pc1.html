@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Examples</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="fonts/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/estilo.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/edde6265f2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<header>
+
+  <div class="jumbotron text-center container-fluid bg-dark text-white" style="margin-bottom:0" >
+    <div class="row">
+  <div class="col-sm-10">
+   
+      <h1 class="display-3">SISTEMA INTEGRADO DE GESTION DOCUMENTAL SISGED</h1>
+  </div>
+
+  <div class="col-sm-2">
+    <img src="../img/usuario.jpeg" class="rounded-circle estilo-elias " alt="imagencircular" style="z-index:0; left: 100px">
+  </div>
+</div>
+  
+  
+</div>
+</header>
+
+ 
+
+<nav class="navbar navbar-expand bg-info navbar-info;" style="z-index:2;height: 110px;position:relative">
+    <div class="row" style="width:100%">
+      <div class="col-sm-8">
+       <nav class="menu-nuevo">
+          <ul>
+
+
+              <li><a href="#"><span class="primero"><i class="icon icon-home"></i></span>Inicio</a></li>
+
+              <li><a href="#"><span class="segundo"><i class="icon icon-tag"></i></span>Categorias</a>
+                  <ul>
+                      <li><a href="#">Item #1</a></li>
+                      <li><a href="#">Item #2</a></li>
+                      <li><a href="#">Item #3</a></li>
+                      <li><a href="#">Item #4</a></li>
+                      <li><a href="#">Item #5</a></li>
+                  </ul>
+              </li>
+              <li><a href="#"><span class="tercero"><i class="icon icon-suitcase"></i></span>Servicios</a>
+                  <ul>
+                      <li><a href="#">Item #1</a></li>
+                      <li><a href="#">Item #2</a></li>
+                      <li><a href="#">Item #3</a></li>
+                      <li><a href="#">Item #4</a></li>
+                      <li><a href="#">Item #5</a></li>
+                  </ul>
+              </li>
+              <li><a href="#"><span class="cuarto"><i class="icon icon-text"></i></span>Acerca de</a>
+                  <ul>
+                      <li><a href="#">Item #1</a></li>
+                      <li><a href="#">Item #2</a></li>
+                      <li><a href="#">Item #3</a></li>
+                      <li><a href="#">Item #4</a></li>
+                      <li><a href="#">Item #5</a></li>
+                  </ul>
+              </li>
+              <li><a href="#"><span class="quinto"><i class="icon icon-mail"></i></span>Contacto</a>
+                  <ul>
+                      <li><a href="#">Item #1</a></li>
+                      <li><a href="#">Item #2</a></li>
+                      <li><a href="#">Item #3</a></li>
+                      <li><a href="#">Item #4</a></li>
+                      <li><a href="#">Item #5</a></li>
+                  </ul>
+              </li>
+          </ul>
+              </nav> 
+      </div>
+      <div class="col-sm-4">
+         <form class="form-inline"  action="/action_page.php">
+            <input class="form-control mr-sm-2"  type="text" placeholder="Busqueda en la web">
+            <button class="btn btn-primary"  type="submit" >Buscar</button>
+        </form>
+      </div>
+    </div>
+    
+  
+ 
+</nav>
+
+<div class="container contenedor-menu" style="margin-top:30px;z-index:1">
+  <div class="row">
+        
+    <div class="col-sm">
+      <h2>Agregar Producto</h2>
+      <form action="empleado" method="POST">
+        <label for="codigo">Codigo      : </label>
+     
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" pattern="[0-9]{8}" placeholder="Ingresar Solo Numeros">
+          <div class="input-group-append">
+            <button class="btn btn-outline-success" type="submit">Validar</button>
+          </div>
+        </div>
+      
+        <div class="form-group">
+          <label for="Nombre">Nombre:</label>
+          <input type="text" class="form-control" pattern="[a-zA-Z\s]{2,50}" placeholder="Nombre" id="nombre">
+        </div>
+
+        <div class="form-group">
+          <label for="Apellido">Apellido:</label>
+          <input type="text" class="form-control" pattern="[a-zA-Z\s]{2,50}" placeholder="Apellido" id="apellido">
+        </div>
+
+        <div class="form-group">
+          <label for="Abreviatura">Abreviatura:</label>
+          <input type="text" class="form-control" pattern="[a-zA-Z\s]{2,50}" placeholder="Ingresar abreviatura " id="abreviatura">
+        </div>
+        <div class="dropdown">
+          <label for="Categoria">Categoria :   </label>
+          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+            Lacteos
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Queso</a>
+            <a class="dropdown-item" href="#">Leche</a>
+            <a class="dropdown-item" href="#">Yogurt</a>
+          </div>
+        </div>
+        <br>
+       <div class="form-group">
+          <label for="RUCP">RUC del Proveedor:</label>
+          <input type="text" class="form-control" pattern="[0-9]{11}" placeholder="Solo numeros" id="RUCP">
+        </div>
+
+        <form>
+          <label for="price">Precio:</label>
+          <select name="price" class="custom-select">
+           
+            <option selected>Seleccione</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+      </form>
+
+<br>
+<div class="form-group">
+  <label for="Color">Color de Etiqueta:</label>
+  <input type="Color" class="form-control"  id="Color">
+</div>
+
+
+        <div class="form-group">
+          <label for="fecha">Fecha:</label>
+          <button type="button" class="btn btn-light"> <i class="fa fa-calendar" aria-hidden="true"></i> --/--/---- </button>     
+        </div>
+  
+
+        <form>
+          <label for="fecha">Estado:</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx">
+            <label class="custom-control-label" for="customRadio">Activo</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx">
+            <label class="custom-control-label" for="customRadio2">Suspendido</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="customRadio3" name="example" value="customEx">
+            <label class="custom-control-label" for="customRadio3">De Baja</label>
+          </div>
+        </form>
+    
+        <br>
+        <form>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck" name="Impuesto">
+            <label class="custom-control-label" for="customCheck">Afecta a Impuesto</label>
+          </div>
+        </form>
+
+        <br>
+<div>
+        <label for="Categoria">Foto :   </label>
+        <button type="button" class="btn btn-outline-info btn"> <i class="fa fa-picture-o" aria-hidden="true"></i> Subir </button>
+      </div>
+        <br>
+        <br>
+
+        <div class="form-group">
+          <label for="<i class="fa fa-audio-description" aria-hidden="true"></i>"Descripcion:</label>
+          <textarea type="text"  rows="4" class="form-control" pattern="[a-zA-Z\s]{2,200}" placeholder=" " id="Decripcion"></textarea>
+        </div>
+       
+        <div class="btn">
+          <button type="button" class="btn btn-primary btn-lg">Grabar</button>
+          
+        </div>
+
+
+        <div class="btn">
+          <button type="button" class="btn btn-primary btn-lg">Limpiar</button>
+          
+        </div>
+    </form>
+     
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<footer class="border border-primary">
+<div class="jumbotron-sm"> 
+  <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" href="#">¿Que hacemos?</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Enlaces principales</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Contactanos</a>
+  </li>
+ 
+</ul>
+</div>
+</footer>
+</body>
+</html>

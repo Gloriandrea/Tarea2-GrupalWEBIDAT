@@ -1,0 +1,144 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+*/
+body {
+    background-image: url(../img/imagenFondo.jpg);
+    /*          central horizontal y verticalmente  */
+    background-position: center center;
+    /*           no repetir la imagen de fondo*/
+    background-repeat: no-repeat;
+    /*            imagen adecue al ancho*/
+    background-size: cover;
+    /*           fondo fijo */
+    background-attachment: fixed;
+    color: white;
+}
+
+
+/*EN EL VIDEO HAY UN ERROR POR EL CUAL NO SE VISUALIZA EN GOOGLE CHROME,
+EL CÓDIGO A CONTINUACIÓN YA ESTA CORREGIDO*/
+
+.contenedor-menu {
+    overflow: hidden;
+    position: relative;
+}
+
+nav.menu-nuevo {
+    top: -5px;
+    position: absolute;
+    z-index:999;
+    left: -85px;
+    right: 0;
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+nav.menu-nuevo ul {
+    list-style: none;
+}
+
+nav.menu-nuevo >ul {
+    display: table;
+    /*Quitamos el overflow hidden que estaba aqui*/
+    width: 100%;
+    background: #000;
+    position: relative;
+}
+
+nav.menu-nuevo >ul li {
+    display: table-cell;
+}
+
+
+/*Sub-menu*/
+
+nav.menu-nuevo >ul>li:hover>ul {
+    display: block;
+    height: 100%;
+}
+
+nav.menu-nuevo >ul>li>ul {
+    display: block;
+    position: absolute;
+    background: #000;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav.menu-nuevo >ul li a {
+    color: #fff !important;
+    display: block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav.menu-nuevo>ul>li>ul>li a:hover {
+    background: #5da5a2;
+}
+
+nav.menu-nuevo>ul>li>a span {
+    background: #174459;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -55px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav.menu-nuevo>ul>li>a span .icon {
+    display: block;
+    line-height: 60px;
+}
+
+nav.menu-nuevo>ul>li>a:hover>span {
+    top: 0;
+}
+
+
+/*Colores*/
+
+nav.menu-nuevo ul li a .primero {
+    background: #0e5061;
+}
+
+nav.menu-nuevo ul li a .segundo {
+    background: #5da5a2;
+}
+
+nav.menu-nuevo ul li a .tercero {
+    background: #f25724;
+}
+
+nav.menu-nuevo ul li a .cuarto {
+    background: #174459;
+}
+
+nav.menu-nuevo ul li a .quinto {
+    background: #37a4d9;
+}
+
+
